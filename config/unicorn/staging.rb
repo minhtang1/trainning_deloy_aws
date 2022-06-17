@@ -1,4 +1,4 @@
-root = "/home/ubuntu/creator/current" # e.g. /var/apps/rails_blog/current
+root = "/home/ubuntu/trainning_deloy_aws/current" # e.g. /var/apps/rails_blog/current
 working_directory root
 
 pid "#{root}/tmp/pids/unicorn.pid"
@@ -10,7 +10,7 @@ worker_processes 2
 timeout 30
 preload_app true
 
-listen '/tmp/unicorn.creator.sock', backlog: 64
+listen '/tmp/unicorn.trainning_deloy_aws.sock', backlog: 64
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
